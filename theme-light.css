@@ -163,6 +163,10 @@ body {
   fill: var(--color-black);
 }
 
+.title-port {
+  color: #000;
+}
+
 /*==================== media quares START =======================*/
   /* ---------- MENU BURGER ---------- */
   /* -- LIST BURGER MENU-- */

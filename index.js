@@ -107,30 +107,30 @@ navLinks.forEach((el) => el.addEventListener('click', closeMenu,));
 
 // portfolio switch buttons
 
-const portfolioBtn = document.querySelector('.portfolio-button__item');
-const portfolioImages = document.querySelectorAll('.portfolio-image');
-const portfolioBtns = document.querySelector('.portfolio-buttons__div');
+// const portfolioBtn = document.querySelector('.portfolio-button__item');
+// const portfolioImages = document.querySelectorAll('.portfolio-image');
+// const portfolioBtns = document.querySelector('.portfolio-buttons__div');
 
-function changeImage(event) {
-  const grebannueDatu = event.target.dataset.season;
-  if(event.target.classList.contains(grebannueDatu)){}
-  if(event.target.classList.contains('portfolio-button__item')) {
-    portfolioImages.forEach((img, index) => img.src = `./assets/img/${event.target.dataset.season}/${index + 1}.jpg`);
-    // portfolioBtn.forEach()
-  }
-}
+// function changeImage(event) {
+//   const grebannueDatu = event.target.dataset.season;
+//   if(event.target.classList.contains(grebannueDatu)){}
+//   if(event.target.classList.contains('portfolio-button__item')) {
+//     portfolioImages.forEach((img, index) => img.src = `./assets/img/${event.target.dataset.season}/${index + 1}.jpg`);
+//     // portfolioBtn.forEach()
+//   }
+// }
 
-portfolioBtns.addEventListener('click', changeImage);
+// portfolioBtns.addEventListener('click', changeImage);
 
-// active buttons  
-const allButtons = portfolioBtns.getElementsByClassName('portfolio-button__item');
-for (var i = 0; i < allButtons.length; i++) {
-  allButtons[i].addEventListener('click', function() {
-    const activeButton = document.getElementsByClassName('active');
-    activeButton[0].className = activeButton[0].className.replace(' active', '');
-    this.className += ' active';
-  });
-}
+// // active buttons  
+// const allButtons = portfolioBtns.getElementsByClassName('portfolio-button__item');
+// for (var i = 0; i < allButtons.length; i++) {
+//   allButtons[i].addEventListener('click', function() {
+//     const activeButton = document.getElementsByClassName('active');
+//     activeButton[0].className = activeButton[0].className.replace(' active', '');
+//     this.className += ' active';
+//   });
+// }
 
 
 // SWITCH LANGUAGE RU ENG
@@ -162,9 +162,99 @@ for (var i = 0; i < activeLangBtn.length; i++) {
 // }
 // window.addEventListener('beforeunload', setLocalStorage);
 
-console.log(`
-1.Смена изображений в секции portfolio +25
-2.Перевод страницы на два языка +25
-3.Переключение светлой и темной темы +25
-4.Дополнительный функционал: выбранный пользователем язык отображения страницы и светлая или тёмная тема сохраняются при перезагрузке страницы +5
-5.Дополнительный функционал: сложные эффекты для кнопок при наведении и/или клике 0`)
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  //loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,  
+    },
+  }
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  //loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,  
+    },
+  }
+});
+var swiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  //loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,  
+    },
+  }
+});
+var swiper3 = new Swiper(".mySwiper4", {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  // loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,  
+    },
+  }
+});
