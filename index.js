@@ -263,10 +263,10 @@ var swiper3 = new Swiper(".mySwiper4", {
 // fancybox
 Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: false,
-  Toolbar: false,
+  Toolbar: true,
 
   Image: {
-    zoom: false,
+    zoom: true,
     click: false,
     wheel: "slide",
   },
