@@ -258,3 +258,16 @@ var swiper3 = new Swiper(".mySwiper4", {
     },
   }
 });
+
+
+// fancybox
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Thumbs: false,
+  Toolbar: false,
+
+  Image: {
+    zoom: false,
+    click: false,
+    wheel: "slide",
+  },
+});
