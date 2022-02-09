@@ -1,0 +1,171 @@
+:root {
+  --color-gold: #bdae82;
+  --color-black: #000;
+  --colr-white: #fff;
+  --fontSmall: 18px;
+  --fontP: 20px;
+  --fontBig: 40px;
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url(/portfolio/assets/fonts/Merriweather-Bold.ttf);
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-black);
+}
+
+.theme-toggle__btn[data-theme="dark"] {
+  display: none;
+}
+
+.theme-toggle__btn[data-theme="light"] {
+  display: block;
+}
+
+
+/* ============ SKILLS =========== */
+
+
+.skills-section-title {
+  color: var(--color-gold));
+}
+.skills-section-title::before {
+
+  border: 1px solid var(--color-gold);
+}
+.skills-section-title::after {
+
+  border: 1px solid var(--color-gold);
+}
+
+/* ==== skills items ==== */
+
+.section-skills__item {
+  color: var(--colr-white);
+}
+
+
+.section-skills__text {
+  font-style: bold;
+}
+
+
+.portfolio-title {
+  color:var(--color-gold) ;
+}
+.portfolio-title::before {
+  border: 1px solid var(--color-gold);
+}
+.portfolio-title::after {
+
+  border: 1px solid var(--color-gold);
+}
+
+.portfolio-buttons__div {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  gap: 7px;
+}
+
+.portfolio-button__item {
+  background-color: var(--color-black);
+  color: var(--color-gold);
+  border: solid 3px;
+  border-color: var(--color-gold);
+  cursor: pointer;
+}
+
+
+.portfolio-button__item:hover {
+  color: var(--colr-white);
+  background-color: var(--color-gold);
+  transition: 0.3s;
+}
+
+
+
+.video-title {
+  color: var(--color-gold);
+}
+.video-title::before {
+  border: 1px solid var(--color-gold);
+}
+.video-title::after {
+  border: 1px solid var(--color-gold);
+}
+
+/* ============== PRICE ============ */
+
+.price-title {
+  color: var(--color-gold);
+}
+.price-title::before {
+  border: 1px solid var(--color-gold);
+}
+.price-title::after {
+
+  border: 1px solid var(--color-gold);
+}
+
+
+.price-item__title {
+
+  color: var(--colr-white);
+
+}
+
+.price-item__text {
+
+  color: var(--colr-white);
+}
+
+
+
+/* ========== CONTACTS ========== */
+
+
+.footer-left-side-items>span {
+  color: var(--colr-white);
+}
+.github-link {
+  color: var(--colr-white);
+}
+.github-link:hover {
+  color: var(--color-gold);
+}
+
+.footer__rschool-link {
+  color: var(--colr-white);
+}
+
+.footer__social-links {
+  list-style-type: none;
+}
+
+.icon {
+  fill: var(--colr-white);
+}
+
+@media (max-width:450px) {
+  .contacts__input>input  {
+    max-width: 60%;
+  }
+  .contacts__input>textarea {
+    max-width: 60%;
+  }
+}

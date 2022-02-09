@@ -1,0 +1,203 @@
+:root {
+  --color-gold: #bdae82;
+  --color-black: #000;
+  --colr-white: #fff;
+  --fontSmall: 18px;
+  --fontP: 20px;
+  --fontBig: 40px;
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url(/portfolio/assets/fonts/Merriweather-Bold.ttf);
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dbdbdb;
+}
+
+.theme-toggle__btn[data-theme="dark"] {
+  display: block;
+}
+
+.theme-toggle__btn[data-theme="light"] {
+  display: none;
+}
+
+
+/* ============ SKILLS =========== */
+
+
+.skills-section-title {
+  color: var(--color-black);
+}
+.skills-section-title::before {
+
+  border: 1px solid var(--color-black);
+}
+.skills-section-title::after {
+
+  border: 1px solid var(--color-black);
+}
+
+/* ==== skills items ==== */
+
+.section-skills__item {
+  color: var(--color-black);
+}
+
+
+.section-skills__text {
+  font-style: bold;
+}
+
+
+.portfolio-title {
+  color:var(--color-black) ;
+}
+.portfolio-title::before {
+  border: 1px solid var(--color-black);
+}
+.portfolio-title::after {
+
+  border: 1px solid var(--color-black);
+}
+
+.portfolio-buttons__div {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  gap: 7px;
+}
+
+.portfolio-button__item {
+  background-color: #dbdbdb;
+  color: var(--color-black);
+  border: solid 3px;
+  border-color: var(--color-gold);
+  cursor: pointer;
+}
+
+
+.portfolio-button__item:hover {
+  color: var(--colr-white);
+  background-color: var(--color-gold);
+  transition: 0.3s;
+}
+
+
+
+.video-title {
+  color: var(--color-black);
+}
+.video-title::before {
+
+  border: 1px solid var(--color-black);
+}
+.video-title::after {
+  border: 1px solid var(--color-black);
+}
+
+/* ============== PRICE ============ */
+
+.price-title {
+
+  color: var(--color-black);
+}
+.price-title::before {
+  border: 1px solid var(--color-black);
+}
+.price-title::after {
+
+  border: 1px solid var(--color-black);
+}
+
+
+.price-item__title {
+
+  color: var(--color-black);
+
+}
+
+.price-item__text {
+
+  color: var(--color-black);
+}
+
+
+
+/* ========== CONTACTS ========== */
+
+
+.footer-left-side-items>span {
+  color: var(--color-black);
+}
+.github-link {
+  color: var(--color-black);
+}
+.github-link:hover {
+  color: var(--color-gold);
+}
+
+.footer__rschool-link {
+  color: var(--color-black);
+}
+
+.footer__social-links {
+  list-style-type: none;
+}
+
+.icon {
+  fill: var(--color-black);
+}
+
+/*==================== media quares START =======================*/
+  /* ---------- MENU BURGER ---------- */
+  /* -- LIST BURGER MENU-- */
+  @media (max-width: 769px) {
+    .nav-list {
+      color: var(--color-black);
+    background-color: #dbdbdb;
+    box-shadow: -93px 22px 79px 0 rgba(0, 0, 0, 0.1);
+    }
+    .nav-link {
+      color: var(--color-black);
+      }
+  }
+  
+
+/* -- CLOSE TAG- */
+.header__burger>div {
+  background-color: var(--color-black);
+}
+.header__burger-menu-btn::before,
+.header__burger-menu-btn::after {
+  background-color: var(--color-black);
+}
+.header__burger-menu-btn:hover,
+.header__burger-menu-btn:hover::before,
+.header__burger-menu-btn:hover::after {
+background-color: var(--color-black);
+}
+/* ...........MENU BURGER END............ */
+
+@media (max-width:450px) {
+  .contacts__input>input  {
+    max-width: 60%;
+  }
+  .contacts__input>textarea {
+    max-width: 60%;
+  }
+}
